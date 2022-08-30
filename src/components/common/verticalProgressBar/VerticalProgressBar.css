@@ -1,0 +1,48 @@
+.VerticalprogressBox {
+    width: 47px;
+    height: 55px;
+    background: #FFF;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Sofia Pro Regular';
+}
+
+.VerticalprogressBox .progressBar {
+    width: 47px;
+    position: absolute;
+    bottom: 0px;
+    background-color: #ca9d9d;
+    height: 0%;
+}
+
+.VerticalprogressBox .progressLabel {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #212121;
+}
+
+.VerticalprogressBox .white-progress {
+    background-color: #FFF;
+}
+
+.VerticalprogressBox .green-progress {
+    background-color: #4EC040;
+}
+
+.VerticalprogressBox .blue-progress {
+    background-color: #2D41ED;
+}
+
+.VerticalprogressBox .pink-progress {
+    background-color: #E50AC5;
+}
+
+.progressTitle {
+    font-size: 12px;
+    color: #FFF;
+    font-family: 'Sofia Pro Regular';
+    margin-top: 5px;
+    text-align: center;
+}

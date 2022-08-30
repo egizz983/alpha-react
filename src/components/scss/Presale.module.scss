@@ -1,0 +1,36 @@
+.presaleWrapper {
+    background-color: #0F0336;
+
+    .blockTitle {
+        font-family: 'Sofia Pro Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 68px;
+        color: #FFFFFF;
+
+        @media (max-width: 768px) {
+            font-size: 30px;
+            line-height: 45px;
+        }
+
+        .spanTextColor {
+            color: #EE05FF;
+        }
+    }
+
+    .width-49 {
+        width: 49%;
+    }
+
+    .presaleBlock {
+        background: #2F1B61;
+        border-radius: 13px;
+        padding: 25px 15px;
+
+        &.flatBottom {
+            border-radius: 13px 13px 0 0;
+        }
+    }
+
+}

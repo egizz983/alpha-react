@@ -1,19 +1,32 @@
-.nftcardWrapper{
-    background: #14074B;
-    backdrop-filter: blur(101px);
+.nftcardWrapper {
+    /*   background: #14074B;
+    backdrop-filter: blur(101px);*/
     border-radius: 12px;
     position: relative;
     z-index: 1;
-    .cardTitle{
-        font-family: 'Sofia Pro Medium';
+
+    .cardTitle {
+        font-family: 'Sofia Pro Bold';
         font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 33px;
+        font-weight: 600;
+        font-size: 45px;
         text-transform: uppercase;
+        letter-spacing: 6px;
+
+
     }
-    .tagsWrapper{
-        .tagItem{
+
+    .CardDivider {
+        height: 1px;
+        width: 170px;
+        border: 1px solid #FFF;
+        margin-left: 50%;
+        position: relative;
+        left: -85px;
+    }
+
+    .tagsWrapper {
+        .tagItem {
             height: 28.78px;
             background: rgba(245, 245, 245, 0.07);
             border-radius: 109.706px;
@@ -25,8 +38,13 @@
             display: inline-block;
             cursor: pointer;
         }
+
+        .tagItemsList {
+            margin-left: 80px;
+        }
     }
-    .actionBtn{
+
+    .actionBtn {
         background: linear-gradient(90deg, #FC00FF 0%, #00DBDE 100%);
         box-shadow: 0px 5px 14px rgba(242, 72, 115, 0.38);
         border-radius: 4px;
@@ -38,6 +56,7 @@
         letter-spacing: 0.02em;
         color: #FFFFFF;
         border: 0;
+
         &:hover {
             background: linear-gradient(90deg, #ff00c8 0%, #00aade 100%);
         }

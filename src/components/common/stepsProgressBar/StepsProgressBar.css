@@ -1,0 +1,66 @@
+.stepsProgressBar {
+    margin: 50px 10px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 15px;
+}
+
+.stepsProgressBar-progress {
+    width: 33%;
+    height: 100%;
+    background-image: linear-gradient(to right, #00DBDE, #FC00FF);
+    border-radius: 15px;
+}
+
+.stepsProgressBar-items {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -25px;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 11%;
+}
+
+.stepsProgressBar-item {
+    position: relative;
+}
+
+.stepsProgressBar-item:last-child {
+    margin-right: 15%;
+}
+
+.stepsProgressBar-item::before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    background-color: #ccc;
+    display: block;
+    border-radius: 100%;
+    border: 5px solid #FFF;
+}
+
+.green-progress.stepsProgressBar-item::before {
+    background-color: #4EC040;
+}
+
+.blue-progress.stepsProgressBar-item::before {
+    background-color: #2D41ED;
+}
+
+.pink-progress.stepsProgressBar-item::before {
+    background-color: #E50AC5;
+}
+
+.stepsProgressBar-content {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #CBCBCB;
+    font-family: 'Sofia Pro Regular';
+    font-size: 16px;
+}
