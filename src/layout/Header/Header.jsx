@@ -23,8 +23,9 @@ const navLinks = [
     to: '/home/news',
   },
   {
-    pageName: 'About',
-    to: '/about',
+
+    pageName: 'WhitePaper',
+    to: 'https://alphaplay.games/about',
   },
   {
     pageName: 'Careers',
@@ -74,7 +75,7 @@ const Header = () => {
               </ul>
               <div className='d-flex flex-wrap gap-2'>
                 <div
-                  className={`${Classes.searchWrapper} py-2 px-3 d-flex align-items-center gap-2`}
+                  style={{marginTop: '1px'}} className={`${Classes.searchWrapper} py-2 px-3 d-flex align-items-center gap-2`}
                 >
                   <SearchIcon />
                   <input
@@ -92,8 +93,8 @@ const Header = () => {
                   </select>
                     </div>*/}
 
-                <div className='d-flex align-items-center gap-2 gap-md-3 flex-wrap'>
-                  <Link to='/login' className='text-white text-decoration-none'>
+                <div className=' d-flex align-items-center gap-2 gap-md-3 flex-wrap'>
+                  <Link to='/login' className=' text-white text-decoration-none'>
                     Login
                   </Link>
                   <Link
@@ -135,6 +136,7 @@ const Header = () => {
                           className={`bg-transparent ${Classes.searchInput}`}
                         />
                       </div>
+
                       {/*
                       <div
                         className={`${Classes.selectWrapper} py-2 px-3 d-flex align-items-center me-0 me-lg-2 mb-3`}

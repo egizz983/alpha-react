@@ -4,7 +4,6 @@ import News from './pages/news/News'
 import Blog from './pages/blog/Blog'
 import BlogDetails from './pages/blog/BlogDetails'
 import NotFound from './pages/notFound/NotFound'
-
 function App() {
   return (
     <Routes>

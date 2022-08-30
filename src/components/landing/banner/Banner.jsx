@@ -5,8 +5,9 @@ import Banner2Img from '../../../assets/images/espostsSlide.jpg';
 import Banner3Img from '../../../assets/images/Presale.png';
 import Banner4Img from '../../../assets/images/SubscribeSlide.jpg';
 import { Row, Container, Col, Button } from 'react-bootstrap';
-import { ReactComponent as PlayIcon } from '../../../assets/svg/play.svg';
+import  PlayIcon from '../../../assets/svg/svgfiles.tsx';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
   const settings = {
@@ -16,7 +17,7 @@ const Banner = () => {
     autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
   };
   return (
     <div className='banner-carousel'>
@@ -39,8 +40,10 @@ const Banner = () => {
                     <div className='d-flex align-items-center justify-content-center gap-3 flex-wrap mt-4'>
                       <div className='d-flex align-items-center gap-3' style={{marginTop: '-25px'}}>
                         
-                          <PlayIcon />
-                          <span className='text-white'>Watch Video</span>
+                          <Link className={Classes.play} to='/WelcomeAlpha' style={{textDecoration: 'none'}}>
+                            <PlayIcon fill='white' />
+                            <span >Watch Video</span>
+                          </Link>
                         
                       </div>
                     </div>
@@ -76,25 +79,44 @@ const Banner = () => {
           >
             <Container>
               <Row>
-                <Col lg={12}>
-                  <div className={Classes.bannerInner}>
+                <Col lg={5}>
+                  <div className={Classes.bannerLeft}>
                     <h1 className={`${Classes.title} text-center`}>
-                      Let's Join Alpha Play
+                      ESports
                     </h1>
-                    <p className={`${Classes.description} text-center`}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse vitae ligula placerat, eleifend ex non,
-                      vehicula libero. Suspendisse eget tellus lectus.{' '}
+                    <p className={`${Classes.description} `}>
+                      Participate in our daily events, or simply
+                      hang out with your friends and enjoy the
+                      endless opportunities of gaming!
                     </p>
-                    <div className='d-flex align-items-center justify-content-center gap-3 flex-wrap mt-4'>
-                      <Button className={Classes.startedBtn}>
-                        Get Started
+                    <Button href="#" className={Classes.startedBtn} >
+                        Learn More
                       </Button>
-                      <div className='d-flex align-items-center gap-3'>
-                        <PlayIcon />
-                        <span className='text-white'>Watch Video</span>
-                      </div>
-                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        </div>
+        <div>
+          <div
+            className={`${Classes.bannerWrapper} pt-5 mt-5 d-flex justify-content-center align-items-center`}
+            style={{ background: `url(${Banner4Img})` }}
+          >
+            <Container>
+              <Row>
+                <Col lg={5}>
+                  <div className={Classes.bannerLeft}>
+                    <h1 className={`${Classes.title} text-center`}>
+                    Subscribe 
+                    </h1>
+                    <p className={`${Classes.description} `}>
+                      Get the latest news, deals, and giveaways
+                      delivered straight to your inbox!
+                    </p>
+                    <Button href="#" className={Classes.startedBtn} >
+                        Subscribe
+                      </Button>
                   </div>
                 </Col>
               </Row>

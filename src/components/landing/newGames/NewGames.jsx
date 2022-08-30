@@ -1,7 +1,7 @@
 import React from 'react'
 import Classes from '../../scss/NewGames.module.scss'
 import { Row, Container, Col,Button } from 'react-bootstrap';
-import NewGameCard from './NewGameCard';
+import {Esports,Store,AlphaPlaySeason,Governance} from './NewGameCard';
 import Sidebar from './Sidebar';
 import VideoItem from './VideoItem';
 import { ReactComponent as CarrotRight } from '../../../assets/svg/carrotRight.svg';
@@ -11,11 +11,11 @@ const NewGames = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 3000,
-        autoplaySpeed: 2000,
+        speed: 1000,
+        autoplaySpeed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         nextArrow: <div><CarrotRight /></div>,
         prevArrow: <div><CarrotLeft /></div>,
       };
@@ -24,21 +24,25 @@ const NewGames = () => {
         <Container>
             <Row>
                 <Col lg={8}>
-                    <h1 className={Classes.pageTitle}>New Games</h1>
+                <h1 className={`${Classes.blockTitle} mb-5`}>
+                    {' '}
+                    <span style={{ color: '#EE05FF' }}>AlphaPlay</span>{' '}
+                    <span className='text-white'>Futures</span>
+                </h1>
                     <Slider {...settings}>
                         <div>
                             <Row>
                                 <Col lg={6}>
-                                    <NewGameCard />
+                                    <Esports />
                                 </Col>
                                 <Col lg={6}>
-                                    <NewGameCard />
+                                    <Store />
                                 </Col>
                                 <Col lg={6}>
-                                    <NewGameCard />
+                                    <AlphaPlaySeason />
                                 </Col>
                                 <Col lg={6}>
-                                    <NewGameCard />
+                                    <Governance />
                                 </Col>{/** 
                                 <Col lg={6}>
                                     <NewGameCard />
@@ -50,17 +54,17 @@ const NewGames = () => {
                         </div>
                         <div>
                             <Row>
-                                <Col lg={6}>
-                                    <NewGameCard />
+                            <Col lg={6}>
+                                    <Esports />
                                 </Col>
                                 <Col lg={6}>
-                                    <NewGameCard />
+                                    <Store />
                                 </Col>
                                 <Col lg={6}>
-                                    <NewGameCard />
+                                    <AlphaPlaySeason />
                                 </Col>
                                 <Col lg={6}>
-                                    <NewGameCard />
+                                    <Governance />
                                 </Col>{/** 
                                 <Col lg={6}>
                                     <NewGameCard />

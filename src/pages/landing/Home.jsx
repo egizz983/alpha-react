@@ -3,6 +3,7 @@ import Header from '../../layout/Header/Header'
 import Banner from '../../components/landing/banner/Banner'
 import WelcomeAlpha from '../../components/landing/welcomeAlpha/WelcomeAlpha'
 import Achievement from '../../components/landing/achievement/Achievement'
+import Presale from '../../components/landing/presale/Presale'
 import NewGames from '../../components/landing/newGames/NewGames'
 import RecentInformation from '../../components/landing/recentInformation/RecentInformation'
 import NftToken from '../../components/landing/nftToken/NftToken'
@@ -21,14 +22,16 @@ const Home = () => {
       <Banner />
       <WelcomeAlpha />
       <Achievement />
+      <Presale />
       <NewGames />{/** 
       <RecentInformation />*/}
       <NftToken />
-      {/*<ESports />
+      {/* Road Map instead those 3 
+      <ESports />
       <Store />
       <Alpha />*/}
       <Faq />
-      <Partners />
+      {/* <Partners /> */}
       <Subscribe />
       <Footer />
     </>

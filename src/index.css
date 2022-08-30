@@ -43,6 +43,11 @@ body {
   src: url("./assets/fonts/Sofia-Pro-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'Bungee Outline';
+  font-weight: 400;
+  src: url("./assets/fonts/bungee-outline.ttf") format("truetype");
+}
 
 
 

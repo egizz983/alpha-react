@@ -11,6 +11,16 @@
             line-height: 45px;
           }
     }
+    .play {
+        color: white;
+        fill: red;
+    }
+
+    .play:hover{
+        color: red;
+        fill: red;
+        cursor: pointer;
+    }
     .description{
         font-family: 'Sofia Pro Regular';
         font-style: normal;
